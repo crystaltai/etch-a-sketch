@@ -19,13 +19,32 @@ body {
 /*  SECTION 1: TOP */
 .title {
     color: #F6E58D;
+    letter-spacing: 4px;
 }
 
 /* SECTION 2: MIDDLE */
-.screen-container {
+.screen {
     width: 800px;
     height: 600px;
     background-color: #F0F2F3;
+}
+
+.grid-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.row {
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cell {
+    border: solid;
+    border-color: #DFE4EA;
+    border-width: 1px;
 }
 
 /* SECTION 3: BOTTOM */
@@ -53,7 +72,6 @@ h2 {
     width: 25%;
 }
 
-
 button {
     font-family: 'Readex Pro', 'Times New Roman', Times, serif;
     color: #424242;
@@ -63,9 +81,15 @@ button {
     text-align: center;
     text-decoration: none;
     padding: 10px;
+    cursor: pointer;
 }
 
 button:hover {
+    background-color: #A4B0BE;
+    color: #FFFFFF;
+}
+
+.active-pixel, .active-mode {
     background-color: #A4B0BE;
     color: #FFFFFF;
 }
@@ -77,3 +101,24 @@ button:hover {
 #clear-grid:hover {
     color: #FFFFFF;
 }
+
+/* SECTION 4: FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#github {
+    font-size: 26px;
+    color: #424242;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+   }

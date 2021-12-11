@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- To utilize Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/f99d80629d.js" crossorigin="anonymous"></script>
     <!-- To utilize Readex Pro font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,25 +25,24 @@
         
         <!-- SECTION 2: MIDDLE -->
         <div class="middle">
-            <div class="screen-container">
-                <div class="screen">
+            <div class="screen">
+                <div id="grid-container">
 
                 </div>
             </div>
         </div>
 
-
         <!-- SECTION 3: BOTTOM -->
         <div class="bottom">
-            <div class="pixel-size">
+            <div class="pixel-size" id="pixel-size-container">
                 <h2>Pixel Size:</h2>
-                <button id="small-pixel">S</button>
-                <button id="medium-pixel">M</button>
-                <button id="large-pixel">L</button>
+                <button id="small-pixels" class="active-pixel">S</button>
+                <button id="medium-pixels">M</button>
+                <button id="large-pixels">L</button>
             </div>
-            <div class="mode">
+            <div class="mode" id="mode-container">
                 <h2>Mode:</h2>
-                <button id="classic-mode">Classic</button>
+                <button id="classic-mode" class="active-mode">Classic</button>
                 <button id="color-mode">Color</button>
             </div>
             <div class="clear">
@@ -50,7 +51,12 @@
         </div>
     </div>
     
+    <!-- SECTION 4: FOOTER -->
+    <div class="footer">
+        <h3>Built by Crystal Tai  <a href="https://github.com/crystaltai/rock-paper-scissors/tree/main"><i id="github" class="fab fa-github"></i></a></h3>
+    </div>
 
-    
+    <!-- Javascript script -->
+    <script src="app.js"></script>
 </body>
 </html>
