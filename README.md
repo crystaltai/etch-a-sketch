@@ -3,6 +3,7 @@
 Project to create an Etch-A-Sketch toy using only HTML, CSS and Vanilla JS
 
 **🔗 Live preview:** https://crystaltai.github.io/etch-a-sketch/
+
 ![](https://github.com/crystaltai/etch-a-sketch/blob/main/etch-a-sketch-demo.gif)
 
 ## Built with
